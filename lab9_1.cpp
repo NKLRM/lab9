@@ -25,17 +25,17 @@ int main(){
 	//use 'fixed' and 'setprecision' to fix the number of decimal digits for displaying
 	//you can change input argument of 'setprecision()' to see the effect
 	for(int i=1;loan>0;i++){
-	cout << fixed << setprecision(2); 
-	cout << setw(13) << left << i; 
-	cout << setw(13) << left << loan;
-	cout << setw(13) << left << loan*rate/100.0;
-	loan=loan+(loan*rate/100.0);
-	cout << setw(13) << left << loan;
-	if(pay>loan) pay=loan;
-	cout << setw(13) << left << pay;
-	loan=loan-pay;
-	cout << setw(13) << left << loan;
-	cout << "\n";	
+		cout << fixed << setprecision(2); 
+		cout << setw(13) << left << i; 
+		cout << setw(13) << left << loan;
+		cout << setw(13) << left << loan*rate/100.0;
+		loan=loan+(loan*rate/100.0);
+		cout << setw(13) << left << loan;
+		if(pay>loan) pay=loan;
+		cout << setw(13) << left << pay;
+		loan=loan-pay;
+		cout << setw(13) << left << loan;
+		cout << "\n";	
 	}
 	
 	return 0;
